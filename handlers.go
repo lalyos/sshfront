@@ -88,6 +88,7 @@ func handleAuth(conn ssh.ConnMetadata, key ssh.PublicKey) (*ssh.Permissions, err
 		}, nil
 	}
 	debug("authentication hook status:", status.Status)
+	debug("auth-hook stdout:", output.String())
 	return nil, fmt.Errorf("authentication failed")
 }
 
