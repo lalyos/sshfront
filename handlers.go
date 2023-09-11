@@ -13,8 +13,8 @@ import (
 	"sync"
 	"syscall"
 
+	"github.com/creack/pty"
 	"github.com/flynn/go-shlex"
-	"github.com/kr/pty"
 	"golang.org/x/crypto/ssh"
 )
 
